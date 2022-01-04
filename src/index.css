@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; 
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 10px solid transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #001d2d; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00141f; 
+}
+
+.app {
+  background-image: url('./assets/mountain_landscape18_generated.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.LogoIcon{
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: .25s;
+}
+
+.LogoIcon:hover{
+  opacity: 0.7
+}
+
+.app.warm {
+  background-image: url('./assets/vecteezy_Background_nl1220.jpg');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+  text-align: center;
+}
+
+header{
+  border-bottom: 1px solid white;
+  width: 100vw;
+  position: relative;
+  left: -25px;
+  top: -25px;
+  margin-bottom: 25px;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  padding: 10px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+header img{
+  width: 150px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 18px 25px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius:100px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  margin-top: 10px;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto -20px !important;
+  border-radius: 20px;
+  padding: 35px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+}
+
+.weather-box .feels{
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: none;
+}
+
+.weather-box .feels div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-box .feels span{
+  font-weight: 500;
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .weather p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.weather-box .weather img{
+  width: 50px;
+  margin: 40px 0 -10px 0;
+  animation-iteration-count: infinite;
+  background-color: white;
+  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.weather-box .weather p span{
+  font-weight: 500;
+}
+
+.glass{
+  margin: 10px 0;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  animation: bounce 1s;
+  animation-iteration-count: infinite;
+}
+
+.glass p{
+  font-size: 20px;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  font-weight: 500;
+}
+
+@keyframes bounce {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.008);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.Crafted{
+  color: #cacaca;
+  text-align: center;
+  margin: 20px;
+}
+
+.Crafted span{
+  font-weight: 600;
+  text-shadow: 1px 1px black;
+}
+
+.border{
+  background-color: rgba(50, 50, 70, 0.5);
+  height: 7px;
+  width: 120px;
+  margin: auto;
+  margin-top: -7px;
+}
